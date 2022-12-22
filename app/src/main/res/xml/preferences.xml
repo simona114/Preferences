@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:key="notifications_category"
+        app:title="Известия">
+        <SwitchPreferenceCompat
+            app:key="notifications"
+            app:title="Активиране на известията" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="books_category"
+        app:title="Изберете категория">
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:icon="@drawable/ic_science"
+            app:key="scientific_literature"
+            app:title="Научна литература" />
+
+        <CheckBoxPreference
+            app:defaultValue="false"
+            app:icon="@drawable/ic_fiction"
+            app:key="fiction"
+            app:title="Художествена литература" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="help_category"
+        app:title="Помощ">
+        <Preference
+            app:key="feedback"
+            app:summary="Докладвайте технически проблеми или предложете нови функционалности"
+            app:title="Изпрати обратна връзка" />
+
+        <EditTextPreference
+            app:key="signature"
+            app:title="Вашият подпис" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
